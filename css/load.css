@@ -1,0 +1,40 @@
+body {
+  background-color: rgba(255, 105, 180, 0.5);
+}
+
+#loader-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  /* Độ rộng của loader container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  /* Adjust container width as needed */
+  max-width: 400px;
+  /* Set a maximum width */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  padding: 20px;
+}
+
+#loader {
+  width: 0%;
+  height: 20px;
+  /* Độ cao của thanh loader */
+  background-color: pink;
+  /* Màu của thanh loader */
+}
+
+#loader-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  /* Cỡ chữ */
+  color: #000;
+  /* Màu chữ */
+}

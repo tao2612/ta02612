@@ -1,0 +1,92 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-image,
+.right-image {
+    flex: 1;
+    /* display: flex; */
+    text-align: center;
+}
+
+.left-image img,
+.right-image img {
+    max-width: 400px;
+    height: auto;
+}
+
+.heart-container {
+    /* display: flex; */
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.heart {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(-45deg);
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -50px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: 50px;
+}
+
+p {
+    text-align: center;
+    font-size: 43px;
+}
+
+.button {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.button_left {
+    background-color: #4CAF50;
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px 0px #333;
+}
+
+.button_right {
+    background-color: red;
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px 0px #333;
+}
+
